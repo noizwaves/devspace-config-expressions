@@ -1,0 +1,4 @@
+ports:
+- imageSelector: app
+  forward:
+  - port: 3000

@@ -1,0 +1,4 @@
+- name: hello
+  command: echo hello
+- name: goodbye
+  command: echo goodbye

@@ -1,0 +1,15 @@
+version: v1beta11
+
+# Maybe vars becomes less important when everything else is generated and has access to another yml file or env vars
+vars:
+- name: CLOUDDEV_SSH_VAR
+  source: env
+  default: false
+
+images: $(cat images.yaml)
+deployments: $(cat deployments.yaml)
+dev: $(cat dev.yaml)
+dependencies: $(cat dependencies.yaml)
+commands: $(cat commands.yaml)
+profiles: $(cat profiles.yaml)
+hooks: $(cat hooks.yaml)

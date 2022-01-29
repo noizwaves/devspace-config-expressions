@@ -1,0 +1,12 @@
+- name: ssh
+  activation:
+    - env:
+        CLOUDDEV_SSH_ENV: true
+    - vars:
+        CLOUDDEV_SSH_VAR: true
+  replace:
+    dev:
+      ports:
+        - imageSelector: blah
+          forward:
+          - port: 666
